@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+nav a {
+    font-size: 25px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav {
+    font-size: 23px;
+    color: #fff;
+}
+
+.nav-item {
+    padding: 10px;
+    color: #fff;
+}
+
+.nav-item:hover {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #DC143C;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+/* MAIN */
+
+main, div#home {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+  }
+  
+  .home-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 15px;
+  }
+
+  .home-info h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .home-info .h2-red {
+    font-size: 35px;
+    font-weight: bold;
+    color: #DC143C;
+  }
+
+  .home-position {
+    font-size: 20px;
+  }
+
+  .btn-container {
+    gap: 15px;
+  }
+
+  .btn {
+    width: 200px;
+    height: 55px;
+  }
+  
+  .btn-container a {
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .home-img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-img img {
+    width: 230px;
+    height: 250px;
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 0 10px 10px;
+    border-radius: 50%;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  /* SECTION 1 SOBRE */
+  div #container-sobre {
+    color: #fff;
+    padding: 120px 15%;
+  }
+
+  #container-skilss {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-skills-1 {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .container-skills-2 {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .container-skills-2, .container-skills-1 p {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .skills-itens {
+    padding: 10px;
+  }
+
+  /* SECTION PROJETOS */
+
+  #projetos h2 {
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  
+  #btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-visitar {
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid;
+    text-decoration: none;
+    list-style: none;
+    color: #DC143C;
+    border-radius: 10px;
+  }
+
+  #btn-visitar:hover {
+    background-color: #DC143C;
+    color: #fff;
+  }
+
+  .icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;  
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  /* SECTION CONTATO */
+
+  #container-contato, .container-contato {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    color: #ffff;
+    height: 80vh
+  }
+
+  .form {
+    display: flex;
+    width: 350px;
+    padding: 2em;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .inputs {
+    width: 100%;
+    height: 60px;
+    border-radius: 0.5em;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 0;
+  }
+  
+  .inputmesnsagem {
+    width: 100%;
+    border-radius: 0.5em;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 0;
+  }
+  
+  .submit {
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .form-icons {
+    font-size: 25px;
+  }
+
+  .form-icons i {
+    color: #fff;
+    gap: 20px;
+  }
+
+  /* AGRADECIMENTO */
+  #container-agradecimento {
+    margin-top: 40vh;
+  }
+
+  #container-agradecimento p {
+    font-size: 25px;
+  }
+
+
+  /* FOOTER */
+
+  #container-footer .container-footer {
+    display: flex;
+    color: #fff;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
