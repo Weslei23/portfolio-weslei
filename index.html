@@ -225,16 +225,18 @@
     <section id="contato">
       <div id="container-contato" class="container mt-5 mb-5">
         <div class="container-contato bg-dark rounded-4">
-          <form action="https://formsubmit.co/sschmittweslei@gmail.com" method="POST" class="form">
+          <form action="https://api.staticforms.xyz/submit" method="post" class="form">
             <h3 class="text-center">Entre em Contato</h3>
             <input class="inputs" type="text" name="name" id="nome" placeholder="Digite seu nome" required>
     
             <input type="email" name="email" id="email" class="inputs" required placeholder="Digite seu email email@dominio.com">
             
-            <input type="text" id="telefone" class="inputs" required placeholder="Digite seu telefone (XX)XXXXX-XXXX">
+            <input type="text" name="phone" id="telefone" class="inputs" required placeholder="Digite seu telefone (XX)XXXXX-XXXX">
     
-            <textarea cols="50" rows="10" id="mensagem" class="inputmesnsagem" placeholder="Digite uma mensagem..." required></textarea>
+            <textarea cols="50" rows="10" id="mensagem" name="message" class="inputmesnsagem" placeholder="Digite uma mensagem..." required></textarea>
     
+            <input type="hidden" name="accessKey" value="e9a1dd70-05e9-4f7a-ae62-67132d7cc2fc">
+
             <input type="hidden" name="redirectTo" value="https://weslei23.github.io/portfolio-weslei/agradecimento.html">
 
             <input type="submit" class="submit btn btn-danger" value="Enviar">
